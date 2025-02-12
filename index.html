@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+    <form onsumbit="alert('Имя: ' + this.user.value + '\nLogin:' + this.login.value + '\nPassword:' +this.Password.value + '\nCity:' + this.city.value); return false;">
+        <label>
+            <input type="text" name="user" placeholder="user">
+        </label>
+        <label>
+            <input type="text" name="login" placeholder="login">
+        </label>
+        <label>
+            <input type="text" name="password" placeholder="password">
+        </label>
+        <label>
+            <select name="city" placeholder="city">
+                <option value="Bishkek">Bishkek</option>
+                <option value="Osh">Osh</option>
+                <option value="Karakol">Karakol</option>
+            </select>
+        </label>
+        <button type="submit">Sumbit</button>
+    </form>
+</body>
+<script src="./script.js"></script>
+</html>
